@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexplay Flag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .download-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .download-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .download-card img {
+            width: 80px; /* Fija el ancho de las imágenes */
+            height: 80px; /* Fija la altura de las imágenes */
+            object-fit: contain; /* Mantiene la relación de aspecto dentro de los límites */
+            margin-bottom: 10px;
+        }
+
+        .download-card p {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .download-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Nexplay Flag</h1>
+        <div class="download-section">
+            <!-- Windows -->
+            <div class="download-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2048px-Windows_logo_-_2012.svg.png" alt="Windows">
+                <p>1.0.1</p>
+                <a href="https://drive.google.com/file/d/16MZB98Uhq5sKxvzWKvdItP-aBh1pbtJn/view?usp=drive_link" class="download-button">Download</a>
+            </div>
+            <!-- Mac -->
+            <div class="download-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Mac">
+                <p>1.0.0</p>
+                <a href="https://drive.google.com/file/d/1MtmkNKq3_cHGK6t5XTfi1RT266zi73R0/view?usp=sharing" class="download-button">Download</a>
+            </div>
+            <!-- iOS -->
+            <div class="download-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg" alt="iOS">
+                <p>Comming Soon</p>
+            </div>
+            <!-- Android -->
+            <div class="download-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android">
+		<p>Comming Soon</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
